@@ -1,11 +1,12 @@
+#include <stdio.h>
 #define STACKSIZE 5
 int stack[STACKSIZE];
-int top = -1 // Top of the stack
+int top = -1; // Top of the stack
 void push(int element)
 {//
 		if(top == STACKSIZE -1 )
 		{
-				printf("Stack is full\n")
+				printf("Stack is full\n");
 		}
 		else
 		{
@@ -13,7 +14,7 @@ void push(int element)
 		}
 }
 
-int pull(void)
+int pop(void)
 {//
 		if(top == -1)
 		{
